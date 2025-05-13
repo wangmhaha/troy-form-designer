@@ -1,0 +1,41 @@
+{
+  "name": "troy-form-designer",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist",
+    "packages"
+  ],
+  "author": "wangmin",
+  "main": "./dist/troy-form-designer.umd.cjs",
+  "module": "./dist/troy-form-designer.js",
+  "exports": {
+    ".": {
+      "import": "./dist/troy-form-designer.js",
+      "require": "./dist/troy-form-designer.umd.cjs"
+    },
+    "./dist/troy-form-designer.css": "./dist/troy-form-designer.css"
+  },
+  "style": "./dist/troy-form-designer.css",
+  "keywords": [
+    "表单设计器",
+    "Web表单设计器",
+    "TroyFormDesigner",
+    "Vue3",
+    "ElementPlus"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:lib": "vite build --mode lib",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.3",
+    "vite": "^6.3.5"
+  }
+}
